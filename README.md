@@ -7,12 +7,12 @@
     var  cookie =new storage('cookie');
 ```
 
--  .get
+-  .get(key)
 
--  .put
+-  .put(key, value, expires)
 
--  .remove
+-  .remove(key)
 
--  .clear
+-  .clear()
 
--  .expires
+-  .expires(key, seconds)
