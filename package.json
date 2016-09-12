@@ -1,14 +1,11 @@
 {
   "name": "arno-storage",
   "version": "0.0.0",
-
   "main": "dist/arno-storag.min.js",
-
   "scripts": {
     "dist": " webpack",
     "dist:min": " webpack --config webpack.config.min.js"
   },
-
   "author": "arno",
   "license": "ISC",
   "homepage": "https://github.com/arno-react/react-arno",
@@ -21,5 +18,8 @@
     "file-loader": "^0.8.5",
     "path": "^0.12.7",
     "webpack": "^1.13.1"
+  },
+  "dependencies": {
+    "lru": "^3.1.0"
   }
 }
