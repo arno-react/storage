@@ -11,9 +11,7 @@ export default class Storage {
         }else{
             this.Mode = new LocalStorage();
         }
-        this.get = this.getItem;
-        this.put = this.setItem;
-        this.remove = this.removeItem;
+        
     }
 
     get(key) {
