@@ -1,6 +1,6 @@
 import LocalStorage from './Storage/LocalStorage';
 import Cookie from './Storage/Cookie';
-import CacheStorage from './Storage/ＣacheStorage';
+import CacheStorage from './Storage/CacheStorage';
 
 export default class Storage {
     constructor(name) { //构造函数
