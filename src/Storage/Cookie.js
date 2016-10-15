@@ -32,7 +32,7 @@ export default class Cookie extends StorageParent {
         exp.setTime(exp.getTime() - 1000);
         var cval = this.getCookie(key);
         if (cval) {
-            document.cookie = this.namespace(key) + '=' + cval + ';expires=' + exp.toGMTString();
+            document.cookie = this.namespace(key) + '=' + cval + ';expires=' + exp.toGMTString()+"; path=/";
         }
 
         return this;
@@ -84,7 +84,7 @@ export default class Cookie extends StorageParent {
         document.cookie = localKey + '=' + this.stringify({
                 'val': value,
                 'expires': expires ? expires * 1000 + now : ''
-            });
+            })+"; path=/";
 
         return this;
     }
